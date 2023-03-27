@@ -1,6 +1,7 @@
 $(document).on("click", ".trash-icon", function () {
-  const cardId = this.getAttribute("data-contact-id");
-  const contact = { id: cardId };
+  const contactId = this.getAttribute("data-contact-id");
+  const contact = { id: contactId };
+  
   const xhr = new XMLHttpRequest();
   const url = "http://localhost:3001/contacts/delete";
   xhr.open("DELETE", url);

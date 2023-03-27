@@ -1,5 +1,5 @@
 // we add an event listener to all the pencil icons
-function addEditFunctionality(rowElement, contactsList) {
+function addEditFunctionality(contactsList) {
   $(document).on("click", ".pencil-icon", function () {
     const cardId = this.getAttribute("data-contact-id");
     const contact = contactsList.filter(

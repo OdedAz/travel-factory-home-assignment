@@ -15,9 +15,10 @@ async function renderContacts() {
   listContainer.appendChild(rowElement);
   // we loop throw all the contacts and for each contact we build an html
   createAllCards(contactsList, rowElement);
-  addEditFunctionality(rowElement, contactsList)
+  addEditFunctionality(contactsList)
   // we create the contact form so we can add/edit a contact
   createContactForm(rowElement);
+  addSubmitFormEvent()
 }
 
 renderContacts();
