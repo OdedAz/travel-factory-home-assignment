@@ -1,0 +1,53 @@
+#main-container {
+  background-color: lightgrey;
+  padding: 0.7rem;
+}
+
+#main-container .main-card-container .small-inline {
+  line-height: 0.3em;
+  margin-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+
+#main-container .main-card-container .card .logo-section {
+  margin: auto;
+}
+
+#main-container .main-card-container .card .logo-section .logo {
+    margin-left: 1.5vw;
+}
+
+#main-container .main-card-container .card .editing-icons-wrapper {
+  position: relative;
+  top: -2vh;
+  float: right;
+}
+
+#popup-form {
+  display: none;
+}
+
+#add-contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#add-contact-wrapper #popup-btn {
+    border: none;
+    height: 45px;
+    width: 45px;
+}
+#add-contact-wrapper #popup-btn i {
+    font-size: xx-large;
+    color: green;
+}
+.card {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.logo-section .card-job-title {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
