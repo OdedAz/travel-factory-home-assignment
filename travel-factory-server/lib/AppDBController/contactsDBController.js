@@ -14,14 +14,14 @@ module.exports = class PetsDatabase {
     return this._knex("contacts").select("*");
   }
 
-  async createContact(req) {
-    return this._knex("contacts").insert(req);
+  async createContact(contact) {
+    return this._knex("contacts").insert(contact);
   }
 
-  async updateContact(req) {
-    return this._knex("contacts").where({ id: req.id }).update(req);
+  async updateContact(contact) {
+    return this._knex("contacts").where({ id: contact.id }).update(contact);
   }
-  async deleteContact(req) {
-    return this._knex("contacts").where({ id: req.id }).delete();
+  async deleteContact(contact) {
+    return this._knex("contacts").where({ id: contact.id }).delete();
   }
 };

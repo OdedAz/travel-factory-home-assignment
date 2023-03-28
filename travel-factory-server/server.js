@@ -1,7 +1,7 @@
 const config = require("./lib/services/config");
 const app = require("./lib/app");
 const ContactsDBController = require("./lib/AppDBController/contactsDBController");
-const DatabaseTablesSchemes = require("./lib/AppDBController/DatabaseTablesSchemes");
+const DatabaseTablesSchemes = require("./lib/JoiDBSchemes/DatabaseTablesSchemes");
 const validate = require("./lib/services/Validator");
 async function main() {
     try {

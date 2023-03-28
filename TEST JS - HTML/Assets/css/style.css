@@ -13,6 +13,7 @@
   margin: auto;
 }
 
+
 #main-container .main-card-container .card .logo-section .logo {
     margin-left: 1.5vw;
 }
@@ -51,3 +52,9 @@
   align-items: center;
   margin-top: 1rem;
 }
+
+@media only screen and (max-width: 768px) {
+    .card .row>* {
+        width: auto!important;
+    }
+  }

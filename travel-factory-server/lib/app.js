@@ -7,9 +7,6 @@ const ContactsController = require("./controllers/contactsController");
 module.exports = (config, services) => {
   const app = express();
   app.use(cors());
-  app.use((req, res, next) => {
-    next();
-  });
   app.use(express.json());
 
   app.use("/contacts", ContactsController(services))
